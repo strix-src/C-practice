@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 int main(void)
 {
-    const int target=123;
+    srand(time(0));
+    int target=rand()%100+1;
     int guess_num;
     int count=0;
 
