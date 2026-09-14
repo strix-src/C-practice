@@ -9,6 +9,7 @@ int main()
     for (i=2;i<a;i++){
         if(a%i == 0){
             isPrime=0;
+            break; 
         }
     }
     if(isPrime == 0){
