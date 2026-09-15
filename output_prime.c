@@ -4,9 +4,10 @@ long long isPrime(long long n);
 
 int main(){
     long long x,a;
-    int cnt=10;
+    int cnt=0;
+    printf("请输入一个数字\n");
     scanf("%lld",&x);
-    for(a=2;a<x;a++){
+    for(a=2;a<=x;a++){
         if(isPrime(a)){
             printf("%lld\t",a);
             cnt++;
@@ -17,6 +18,7 @@ int main(){
 
     }
     printf("\n");
+    printf("一共有%d个素数\n",cnt);
     return 0;
 }
 
