@@ -7,6 +7,11 @@ int main(void){
             x=i*c;
             printf("%d*%d=%d ",i,c,x);
             cnt ++;
+            if(x<10){
+                printf("   ");
+            }else{
+                printf("  ");
+                }
             if(cnt == c){
                 printf("\n");
             }
