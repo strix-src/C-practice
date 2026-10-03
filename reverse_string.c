@@ -21,7 +21,6 @@ int main(void){
                 return 1;
             }
         }
-        if(x!=EOF && x=='\n')break;
         p[len]=x;
         len++;
     }
@@ -29,16 +28,15 @@ int main(void){
     char *f=p;
     char *g=p+len-1;
     while(f<g){
-        int temp=*g;
+        char temp=*g;
         *g=*f;
         *f=temp;
         g--;
         f++;
     }
-    for(int i=0;i<=len;i++){
+    for(int i=0;i<len;i++){
         putchar(p[i]);
     }
-    putchar(x);
     free(p);
     p=NULL;
     printf("\n");
