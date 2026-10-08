@@ -94,6 +94,7 @@ void move(char dir){
 void random_food(){
     int on_snake=0;
     do{
+        on_snake=0;
         food.x=rand()%(W-2)+1;
         food.y=rand()%(H-2)+1;
         for(int i=0;i<len;i++){
