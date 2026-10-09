@@ -6,6 +6,10 @@ int main()
     int isPrime=1;
     printf(" 请随机输入一个数，我将判断是否为素数\n");
     scanf("%lld",&a);
+    if(a<2){
+        printf("这不是一个素数\n");
+        return 0;
+    }
     for (i=2;i<a;i++){
         if(a%i == 0){
             isPrime=0;
