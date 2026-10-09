@@ -6,7 +6,7 @@ int main()
    int max=b;
    if(a>b)
    {
-       max=b;
+       max=a;
    }
    printf("更大的是%d\n",max);
    return 0;
